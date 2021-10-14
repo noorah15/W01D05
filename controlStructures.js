@@ -27,3 +27,14 @@ for (let i = 0; i < 5; i++) {
   for (let j = 0; j <= i; j++) x += "*";
   console.log(x);
 }
+
+let x = 6;
+let y = 3;
+
+let min = Math.min(x, y);
+for (let i = min; i >= 1; i--) {
+  if (x % i == 0 && y % i == 0) {
+    console.log(i);
+    break;
+  }
+}
